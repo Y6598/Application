@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Continue_With_Email">
+
+
+    <ImageButton
+
+
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:contentDescription="back_Button"
+        app:backgroundTint="@null">
+
+    </ImageButton>
+
+<TextView
+
+    android:id="@+id/createAccountText"
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/backButton"
+    android:layout_marginStart="10dp"
+    android:text="Create Account"
+    android:textColor="@color/black"
+    android:textSize="35dp"
+
+    />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="409dp" android:layout_height="wrap_content"
+        android:layout_below="@+id/createAccountText"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/emailAddressLayout"
+        app:boxStrokeColor="@color/light_Purple"
+        app:hintTextColor="@color/light_Purple"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:textCursorDrawable="@null"
+            android:id="@+id/emailAddress"
+            android:hint="Email Address*"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/emailAddressAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/emailAddressLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#FA3E3E"/>
+
+<com.google.android.material.textfield.TextInputLayout
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/emailAddressAlert"
+    app:boxStrokeColor="@color/light_Purple"
+    app:hintTextColor="@color/light_Purple"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    app:endIconMode="clear_text"
+    android:id="@+id/confirmEmailAddressLayout">
+
+    <com.google.android.material.textfield.TextInputEditText
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Confirm Email Address*"
+        android:layout_width="match_parent"
+        android:textCursorDrawable="@null"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmEmailAddress"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/confirmEmailAddressAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/confirmEmailAddressLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#FA3E3E"/>
+
+<com.google.android.material.textfield.TextInputLayout
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/confirmEmailAddressLayout"
+    app:boxStrokeColor="@color/light_Purple"
+    app:hintTextColor="@color/light_Purple"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginStart="10dp"
+    app:endIconMode="clear_text"
+    app:helperText="Password must have..."
+    android:id="@id/passwordLayout">
+
+    <com.google.android.material.textfield.TextInputEditText
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Password*"
+        android:textCursorDrawable="@null"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/passwordAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/passwordLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#FA3E3E"/>
+
+
+<com.google.android.material.textfield.TextInputLayout
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/passwordAlert"
+    app:boxStrokeColor="@color/light_Purple"
+    app:hintTextColor="@color/light_Purple"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    app:endIconMode="clear_text"
+    android:id="@id/confirmPasswordLayout">
+
+    <com.google.android.material.textfield.TextInputEditText
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Confirm Password*"
+        android:textCursorDrawable="@null"
+        android:layout_width="match_parent"
+        android:id="@+id/confirmPassword"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/confirmPasswordAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/confirmPasswordLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#FA3E3E"/>
+
+
+
+<TextView
+
+    android:id="@+id/mandatoryTextInformation"
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/confirmPasswordAlert"
+    android:layout_marginStart="10dp"
+    android:singleLine="true"
+    android:text="*Mandatory information"
+    android:textColor="@color/black"
+    android:textSize="15dp"
+
+    />
+
+<Button
+    android:id="@+id/continueButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/mandatoryTextInformation"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    app:backgroundTint="@null"
+    android:background="@drawable/curvy_button_light_purple"
+    android:text="Continue"
+    android:textColor="@color/white"
+
+    />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountOptions">
+
+    <ImageButton
+
+        android:id="@+id/backButton1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:contentDescription="back_Button" />
+
+    <TextView
+
+        android:id="@+id/createAccountText1"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backButton1"
+        android:layout_marginStart="10dp"
+        android:text="Create Account"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+
+        />
+
+    <TextView
+
+        android:id="@+id/getStartedText"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createAccountText1"
+        android:layout_marginStart="10dp"
+        android:text="Get started by creating an account"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/continue_With_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getStartedText"
+        android:background="@drawable/curvy_button_light_purple"
+        android:layout_marginTop="130dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Continue with Email"
+        app:backgroundTint="@null"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/continue_With_Email"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/light_Purple" />
+
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/continue_With_Email"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/line1"
+        android:text="or"
+        android:textColor="@color/light_Purple"
+        android:textSize="25dp" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="190dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/continue_With_Email"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/light_Purple" />
+
+    <Button
+        android:id="@+id/continue_With_Google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue with Google"
+        android:textColor="@color/light_Purple"
+        android:background="@drawable/curvy_button_white"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:backgroundTint="@null"
+        android:layout_below="@+id/or"/>
+
+
+
+
+    <Button
+        android:id="@+id/continue_With_Facebook"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curvy_button_white"
+        app:backgroundTint="@null"
+        android:text="Continue with Facebook"
+        android:textColor="@color/light_Purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@+id/continue_With_Google"
+        app:layout_constraintVertical_bias="0.84" />
+
+
+
+
+</RelativeLayout>

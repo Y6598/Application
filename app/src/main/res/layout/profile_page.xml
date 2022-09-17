@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_Page">
+
+
+    <ImageButton
+
+
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:contentDescription="back_Button"
+        app:backgroundTint="@null">
+
+    </ImageButton>
+
+    <TextView
+
+        android:id="@+id/profileText"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backButton"
+        android:layout_marginStart="10dp"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/firstName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileText"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/light_Purple"
+        app:hintTextColor="@color/light_Purple"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:textCursorDrawable="@null"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:hint="First Name*"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstName"
+        app:boxStrokeColor="@color/light_Purple"
+        app:hintTextColor="@color/light_Purple"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:endIconMode="clear_text"
+        android:id="@+id/surname">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Surname*"
+            android:textCursorDrawable="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surname"
+        app:boxStrokeColor="@color/light_Purple"
+        app:hintTextColor="@color/light_Purple"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        app:suffixText=" years"
+        app:suffixTextColor="@color/light_Purple"
+        android:layout_marginStart="10dp"
+        app:endIconMode="clear_text"
+        android:id="@+id/age">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Age*"
+            android:textCursorDrawable="@null"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age"
+        app:boxStrokeColor="@color/light_Purple"
+        app:hintTextColor="@color/light_Purple"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/gender_dropdown"
+        >
+
+        <AutoCompleteTextView
+            android:hint="Gender*"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:inputType="none"
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender_dropdown"
+        app:boxStrokeColor="@color/light_Purple"
+        app:hintTextColor="@color/light_Purple"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:suffixText=" kgs"
+        app:suffixTextColor="@color/light_Purple"
+        app:endIconMode="clear_text"
+        android:id="@+id/weight">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Weight*"
+            android:textCursorDrawable="@null"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight"
+        app:boxStrokeColor="@color/light_Purple"
+        app:hintTextColor="@color/light_Purple"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:suffixText=" cms"
+        app:suffixTextColor="@color/light_Purple"
+        app:endIconMode="clear_text"
+        android:id="@+id/height">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Height*"
+            android:textCursorDrawable="@null"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+
+        android:id="@+id/mandatoryTextInformation"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height"
+        android:layout_marginStart="10dp"
+        android:singleLine="true"
+        android:text="*Mandatory information"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+
+        />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mandatoryTextInformation"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/curvy_button_light_purple"
+        android:text="Continue"
+        android:textColor="@color/white"
+
+        />
+
+
+
+</RelativeLayout>

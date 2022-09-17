@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dietary_Requirements">
+
+
+    <ImageButton
+
+
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:contentDescription="back_Button"
+        app:backgroundTint="@null">
+
+    </ImageButton>
+
+    <TextView
+
+        android:id="@+id/allergiesText"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backButton"
+        android:layout_marginStart="10dp"
+        android:text="Allergies"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allergiesText"
+        app:boxStrokeColor="@color/light_Purple"
+        app:hintTextColor="@color/light_Purple"
+        android:layout_marginEnd="10dp"
+        app:startIconDrawable="@drawable/ic_baseline_search_24"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/allergiesDropdown"
+        >
+
+        <AutoCompleteTextView
+            android:hint="Search Allergies*"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:inputType="none"
+            android:id="@+id/allergiesDropdownSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+
+        android:id="@+id/mostCommonText"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allergiesDropdown"
+        android:layout_marginStart="10dp"
+        android:text="Most Common"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/allergiesButtonNone"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mostCommonText"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/allergy_buttons"
+        android:text="None"
+        android:textColor="@color/black"
+
+        />
+
+    <Button
+        android:id="@+id/allergiesButtonSoy"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mostCommonText"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/allergiesButtonNone"
+        android:background="@drawable/allergy_buttons"
+        android:text="Soy"
+        android:textColor="@color/black"
+
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/allergiesButtonDairy"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allergiesButtonNone"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/allergy_buttons"
+        android:text="Dairy"
+        android:textColor="@color/black"
+
+        />
+
+    <Button
+        android:id="@+id/allergiesButtonFish"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allergiesButtonSoy"
+        android:layout_toRightOf="@+id/allergiesButtonDairy"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/allergy_buttons"
+        android:text="Fish"
+        android:textColor="@color/black"
+
+        />
+    <Button
+        android:id="@+id/allergiesButtonEggs"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allergiesButtonDairy"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/allergy_buttons"
+        android:text="Eggs"
+        android:textColor="@color/black"
+
+        />
+
+    <Button
+        android:id="@+id/allergiesButtonPumpkin"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allergiesButtonFish"
+        android:layout_toRightOf="@id/allergiesButtonEggs"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/allergy_buttons"
+        android:text="Pumpkin"
+        android:textColor="@color/black"
+
+        />
+
+    <Button
+        android:id="@+id/allergiesButtonGluten"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allergiesButtonEggs"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/allergy_buttons"
+        android:text="Gluten"
+        android:textColor="@color/black"
+
+        />
+
+    <Button
+        android:id="@+id/allergiesButtonPotato"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allergiesButtonPumpkin"
+        android:layout_toRightOf="@id/allergiesButtonGluten"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/allergy_buttons"
+        android:text="Potato"
+        android:textColor="@color/black"
+
+        />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allergiesButtonPotato"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/curvy_button_light_purple"
+        android:text="Continue"
+        android:textColor="@color/white"
+
+        />
+
+
+
+</RelativeLayout>
